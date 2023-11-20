@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-lp!9-8=&#zaa$-jwqn1&zd&)cu1_ct()8jp!$f89p!ze^78nov
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['SnuppeDeluxe.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'SnuppeDeluxe.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1'
+    ]
 
 
 # Application definition
