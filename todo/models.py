@@ -8,3 +8,6 @@ class Todo(models.Model):
   description = models.CharField(max_length=30)
   created_at = models.DateField(default=datetime.date.today)
   user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+  
+  def __str__(self): #Overview in adminpanel
+    return f"{self.created_at}: {self.user} -> {self.title} "
