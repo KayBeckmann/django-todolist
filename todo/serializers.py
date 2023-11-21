@@ -5,7 +5,7 @@ from .models import Todo
 class UserSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = User
-    fields = ['id']
+    fields = ['id', 'username']
 
 class TodoSerializer(serializers.HyperlinkedModelSerializer):
   user = UserSerializer()
