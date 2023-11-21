@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     'SnuppeDeluxe.pythonanywhere.com',
     'localhost',
     '127.0.0.1',
-    '10.10.*.*'
+    '10.10.0.22'
     ]
 
 
