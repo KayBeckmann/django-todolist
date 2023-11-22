@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-import datetime
+from datetime import date, datetime
 
 # Create your models here.
 class Todo(models.Model):
@@ -11,3 +11,11 @@ class Todo(models.Model):
   
   def __str__(self): #Overview in adminpanel
     return f"{self.created_at}: {self.user} -> {self.title} "
+  
+  '''
+  Days since creation
+  '''
+  def time_passed(self):
+    today = date.today()
+    delta = today - self.created_at
+    return delta.days
